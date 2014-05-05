@@ -1,0 +1,2 @@
+Scala for the Impatient
+=======================
