@@ -109,6 +109,7 @@ Write a recursive function that counts how many different ways you can make chan
 The `countChange` function uses a recursive function to count the combinations of denominations for the remaining money for change. It takes two inputs `residue` of remaining money to change and `demon` of possible coins to choose from, and terminates at `residue` equal 0, which means the combination gives one possible solution, and at `residue` small than 0, which means the combination is too big for the residue, or when `residue` is large than 0 while there is no denominations to choose from, which terminates at null demonination. For recursion, it returns the sum of the counts of `residue` subtracting the first denomination using the full list of denominations, and the counts of `residue` using the rest of the denominations apart from the first.
 
 For example, the combinations of countChange(4, List(1, 2)) can be:
+
 	countChange(4, List(1, 2))
 	countIter(3, List(1, 2)) + countIter(4, List(2))
 	countIter(2, List(1, 2)) + countIter(3, List(2)) + countIter(2, List(2)) + countIter(4, List())
