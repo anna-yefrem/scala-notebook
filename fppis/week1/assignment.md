@@ -66,7 +66,8 @@ Write a recursive function which verifies the balancing of parentheses in a stri
 
 **Solution**
 
-The `balance` function takes a list of `Char` and output if the parentheses are equal. It uses a recursive function to count the unbalanced number `pCount` of `(`s and that in the remaining part. The termination conditions are 
+The `balance` function takes a list of `Char` and output if the parentheses are equal. It uses a recursive function to count the unbalanced number `pCount` of `(` and that in the remaining part. The termination conditions are
+
 1. found `)` with no prior `(`
 2. no remaining part with `pCount` = 0
 3. no remaining part with `pCount` != 0.
