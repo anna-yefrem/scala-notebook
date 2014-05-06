@@ -33,7 +33,7 @@ Do this exercise by implementing the `pascal` function in `Main.scala`, which ta
 
 **Solution**
 
-The `pascal` function is a recursive one which the value of column `c` and row `r` is the sum of two nubmers at column `c-1` and `c` of row `r-1`. The termination condition is given by the number `1` at left or right edge, of column `0` and `r`, respectively. The numbers of column `-1` and `r+1` will be ignored by return 0.
+The `pascal` function is a recursive one which the value of column `c` and row `r` is the sum of two nubmers at column `c-1` and `c` of row `r-1`. The termination condition is given by the number `1` at left or right edge, of column `0` and `r`, respectively and returns 1. The numbers of column `-1` and `r+1` will be ignored by returning 0.
 
 **Code**
 
@@ -66,7 +66,11 @@ Write a recursive function which verifies the balancing of parentheses in a stri
 
 **Solution**
 
-The `balance` function takes a list of `Char` and output if the parentheses are equal. It uses a recursive function to count the unbalanced number `pCount` of `(`s and that in the remaining part. The termination conditions are 1. found `)` with no prior `(`; 2. no remaining part with `pCount` = 0; 3. no remaining part with `pCount` != 0. In other cases, increase `pCount` where the first `Char` in remaining part is `(`, or decrease at `)`. Simply use the `tail` as remaining if the first `Char` is neither `(` or `)`.
+The `balance` function takes a list of `Char` and output if the parentheses are equal. It uses a recursive function to count the unbalanced number `pCount` of `(`s and that in the remaining part. The termination conditions are 
+1. found `)` with no prior `(`
+2. no remaining part with `pCount` = 0
+3. no remaining part with `pCount` != 0.
+4. in other cases, increase `pCount` where the first `Char` in remaining part is `(`, or decrease at `)`. Simply use the `tail` as remaining if the first `Char` is neither `(` or `)`.
 
 **Code**
 	
@@ -101,7 +105,7 @@ Write a recursive function that counts how many different ways you can make chan
 
 **Solution**
 
-The `countChange` function uses a recursive function to count the combinations of denominations for the remaining money for change. It takes two inputs `residue` of remaining money to change and `demon` of possible coins to choose from, and terminates at `residue` equal 0, which means the combination gives one possible solution, and at `residue` small than 0, which means the combination is too big for the residue, or when `residue` is large than 0 while there is no denominations to choose from, which terminates at null demonination. For recursion, it returns the sum of the counts of residue subtracting the first denomination using the full list of denominations, and the counts of residue using the rest of the denominations apart from the first.
+The `countChange` function uses a recursive function to count the combinations of denominations for the remaining money for change. It takes two inputs `residue` of remaining money to change and `demon` of possible coins to choose from, and terminates at `residue` equal 0, which means the combination gives one possible solution, and at `residue` small than 0, which means the combination is too big for the residue, or when `residue` is large than 0 while there is no denominations to choose from, which terminates at null demonination. For recursion, it returns the sum of the counts of `residue` subtracting the first denomination using the full list of denominations, and the counts of `residue` using the rest of the denominations apart from the first.
 
 For example, the combinations of countChange(4, List(1, 2)) can be:
 	countChange(4, List(1, 2))
