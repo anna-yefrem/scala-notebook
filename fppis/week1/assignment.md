@@ -54,9 +54,9 @@ Write a recursive function which verifies the balancing of parentheses in a stri
 
 **Example**
 
-	balance(":-)")
+	balance(":-)".toList)
 	  // res0: Boolean = false
-	balance("())(") = false
+	balance("())(".toList) = false
 	  // res1: Boolean = false
 
 **Code**
@@ -68,7 +68,7 @@ Write a recursive function which verifies the balancing of parentheses in a stri
 def balance(chars: List[Char]): Boolean = {
   def balanceIter(part: List[Char], pCount: Int): Boolean = {
     if (pCount < 0) false
-    else if (part.isEmpty) {if (pCount == 0) true else false}
+    else if (part.isEmpty) { if (pCount == 0 ) true else false}
     else if (part.head == '(') balanceIter(part.tail, pCount + 1)
     else if (part.head == ')') balanceIter(part.tail, pCount - 1)
     else balanceIter(part.tail, pCount)
