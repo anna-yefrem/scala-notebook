@@ -115,6 +115,8 @@ For example, the combinations of countChange(4, List(1, 2)) can be:
 	countIter(2, List(1, 2)) + countIter(3, List(2)) + countIter(2, List(2)) + countIter(4, List())
 	countIter(1, List(1, 2)) + countIter(2, List(2)) + countIter(1, List(2)) + countIter(3, List()) + countIter(0, List(2)) + countIter(2, List()) + 0
 	...
+	countIter(0, List(1)) + countIter(0, List(2)) + countIter(0, List(2)) // 1+1+1+1, 1+1+2, 2+2
+	1 + 1 + 1 // 3
 
 **Code**
 
