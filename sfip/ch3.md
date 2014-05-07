@@ -101,6 +101,7 @@ a.mkString("<", ",", ">")
 
 ```scala
 val matrix = Array.ofDim[Double](3, 4)
+  // 3 by 4 matrix
 ```
 
 * variable-length 2-d array
