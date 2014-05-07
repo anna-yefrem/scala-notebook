@@ -151,7 +151,7 @@ class Person(val name: String, val age: Int){
 ```
 
 Primary Constructor Parameter | Generated Field/Methods
--------------------------------------------------------
+----------------------------- | -----------------------
 `name: String` | object-private field, or no field if no method uses `name`
 `private val/var name: String` | private field, private getter/setter
 `val/var name: String` | private field, public getter/setter
