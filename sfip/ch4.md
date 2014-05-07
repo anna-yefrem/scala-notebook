@@ -4,6 +4,7 @@ Maps and Tuples
 ### 4.1 Constructing a Map
 
 * create a map
+
 ```scala
 val scores = Map("Alice" -> 10, "Bob" -> 3, "Cindy" -> 8
   // immutable Map[String, Int]
@@ -60,12 +61,14 @@ for ((k, v) <- map) process k and v
 ```
 
 * process key or value set
+
 ```scala
 scores.keySet //A set such as Set("Bob", "Cindy", "Fred", "Alice")
 for (v <- scores.values) println(v) //Prints 10 8 7 10or some permutation thereof
 ```
 
 * reverse a map
+
 ```scala
 for ((k, v) <- map) yield (v, k)
 ```
@@ -79,6 +82,7 @@ val scores = scala.collection.immutable.SortedMap("Alice" -> 10, "Fred" -> 7, "B
 ```
 
 * use a LinkedHashMap to visit the keys in insertion order
+
 ```scala
 val months = scala.collection.mutable.LinkedHashMap("January" -> 1,
 "February" -> 2, "March" -> 3, "April" -> 4, "May" -> 5, ...)
@@ -96,12 +100,14 @@ val second = t._2
 ```
 
 * use pattern matching
+
 ```scala
 val (first, second, third) = t // sets first to 1, second to 3.14, third to "Fred"
 val (first, second, _) = t // ignore components
 ```
 
 * generate pairs
+
 ```scala
 "New York".partition(_.isUpper)
   // yields the pair ("NY", "ew ork")
