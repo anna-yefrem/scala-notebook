@@ -7,7 +7,7 @@ Get input by `getInt()` and `getLine()`. Produce output by `print()` and `printl
 
 2.5 Loops
 
-**while loop**
+* while loop
 
 ```scala
 while (n > 0) {
@@ -15,14 +15,14 @@ while (n > 0) {
 }
 ```
 
-**for loop**
+* for loop
 
 ```scala
 for (i <- 1 to n)
   // code
 ```
 
-Use `until` for case n - 1.
+* Use `until` for case n - 1.
 
 ```scala
 val s = "Hello"
@@ -31,7 +31,7 @@ for (i <- 0 until s.length) // Last value for iis s.length - 1
   sum += s(i)
 ```
 
-Use direct loop for characters, lists, etc.
+* Use direct loop for characters, lists, etc.
 
 ```scala
 var sum = 0
