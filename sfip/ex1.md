@@ -58,7 +58,7 @@ import util.Random
 
 _UNKOWN_
 
-<a tag="ex9">9. How do you get the first character of a string in Scala? The last character?</a>
+<a name="ex9">9. How do you get the first character of a string in Scala? The last character?</a>
 
 _Ans_:
 
