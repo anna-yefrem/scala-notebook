@@ -3,7 +3,7 @@ Exercises for Chapter 1
 
 _UNSOLVED_
 
-* [Exercise 9](#ex9)
+* [Exercise 8](#ex8)
 
 ### <a name="ex2">2. In the Scala REPL, compute the square root of 3, and then square that value. By how much does the result differ from 3?</a>
 
@@ -57,7 +57,7 @@ import util.Random
 
 ### <a name="ex8">8. One way to create random file or directory names is to produce a random `BigInt` and convert it to base 36, yielding a string such as `"qsnvbevtomcj38o06kul"`. Poke around Scaladoc to find a way of doing this in Scala.</a>
 
-_UNKOWN_
+_UNSOLVED_
 
 ### <a name="ex9">9. How do you get the first character of a string in Scala? The last character?</a>
 
