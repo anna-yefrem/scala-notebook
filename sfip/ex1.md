@@ -19,12 +19,12 @@ abs(pow(sqrt(3), 2) - 3)
 
 _Ans_: `res` variables are `val`.
 
-<a name="ex4">4. Scala lets you multiply a string with a number—try out `"crazy" * 3` in the REPL. What does this operation do? Where can you find it in Scaladoc?</a>
+### <a name="ex4">4. Scala lets you multiply a string with a number—try out `"crazy" * 3` in the REPL. What does this operation do? Where can you find it in Scaladoc?</a>
 
 _Ans_: `"crazy" * 3` returns "crazycrazycrazy". `"Crazy"` is a String, which is defined in `Predef` package that `type
 String = java.lang.String`.
 
-<a name="ex5">5. What does `10 max 2` mean? In which class is the `max` method defined?</a>
+### <a name="ex5">5. What does `10 max 2` mean? In which class is the `max` method defined?</a>
 
 _Ans_: `10 max 2` mean `10.max(2)` which returns the larger number 10 of two numbers. The `max` method is defined in `abstract final class Int extends AnyVal` that
 
@@ -33,7 +33,7 @@ def max(that: Int): Int
   // Returns this if this > that or that otherwise.
 ```
 
-<a name="ex6">6. Using BigInt, compute 2^1024</a>
+### <a name="ex6">6. Using BigInt, compute 2^1024</a>
 
 _Ans_:
 
@@ -45,7 +45,7 @@ for (i <- 1024)
 
 _ALTERNATIVE_
 
-<a name="ex7">7. What do you need to import so that you can get a random prime as `probablePrime(100, Random)`, without any qualifiers before `probablePrime` and `Random`?</a>
+### <a name="ex7">7. What do you need to import so that you can get a random prime as `probablePrime(100, Random)`, without any qualifiers before `probablePrime` and `Random`?</a>
 
 _Ans_:
 
@@ -54,11 +54,11 @@ import math.BigInt.probablePrime
 import util.Random
 ```
 
-<a name="ex8">8. One way to create random file or directory names is to produce a random `BigInt` and convert it to base 36, yielding a string such as `"qsnvbevtomcj38o06kul"`. Poke around Scaladoc to find a way of doing this in Scala.</a>
+### <a name="ex8">8. One way to create random file or directory names is to produce a random `BigInt` and convert it to base 36, yielding a string such as `"qsnvbevtomcj38o06kul"`. Poke around Scaladoc to find a way of doing this in Scala.</a>
 
 _UNKOWN_
 
-<a name="ex9">9. How do you get the first character of a string in Scala? The last character?</a>
+### <a name="ex9">9. How do you get the first character of a string in Scala? The last character?</a>
 
 _Ans_:
 
@@ -68,7 +68,7 @@ val first = s(0) // first: Char = H
 val last = s(s.length - 1) // last: Char = o
 ```
 
-<a name="ex10">10. What do the `take`, `drop`, `takeRight`, and `dropRight` string functions do? What advantage or disadvantage do they have over using substring?</a>
+### <a name="ex10">10. What do the `take`, `drop`, `takeRight`, and `dropRight` string functions do? What advantage or disadvantage do they have over using substring?</a>
 
 
 _Ans_: 
