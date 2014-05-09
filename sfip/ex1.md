@@ -1,11 +1,11 @@
-Exercise for Chapter 1
+Exercises for Chapter 1
 ======================
 
 ### Unsolved
 
 [Exercise 9](#ex9)
 
-<a name="ex2">2. In the Scala REPL, compute the square root of 3, and then square that value. By how much does the result differ from 3?</a>
+### <a name="ex2">2. In the Scala REPL, compute the square root of 3, and then square that value. By how much does the result differ from 3?</a>
 
 _Ans_: 
 
@@ -15,7 +15,7 @@ abs(pow(sqrt(3), 2) - 3)
   // res0: Double = 4.440892098500626E-16
 ```
 
-<a name="ex3">3. Are the `res` variables `val` or `var`?</a>
+### <a name="ex3">3. Are the `res` variables `val` or `var`?</a>
 
 _Ans_: `res` variables are `val`.
 
