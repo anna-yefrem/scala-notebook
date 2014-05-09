@@ -1,7 +1,7 @@
 Scala for the Impatient
 =======================
 
-**Contents**
+### Contents
 
 1. The Basics
 2. [Control Structures and Functions](ch2.md)
