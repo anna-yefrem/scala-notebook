@@ -1,9 +1,9 @@
 Exercises for Chapter 1
 ======================
 
-### Unsolved
+_UNSOLVED_
 
-[Exercise 9](#ex9)
+* [Exercise 9](#ex9)
 
 ### <a name="ex2">2. In the Scala REPL, compute the square root of 3, and then square that value. By how much does the result differ from 3?</a>
 
@@ -39,8 +39,9 @@ _Ans_:
 
 ```scala
 var exp: BigInt = 2
-for (i <- 1024)
+for (i <- 0 to 1024)
   exp *= 2
+exp
 ```
 
 _ALTERNATIVE_
