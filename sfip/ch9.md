@@ -222,5 +222,8 @@ val numitemPattern(num, item) = "99 bottles"
 ```
 
 * use `for` expression and extacted groups from multiple expressions
+
+```scala
 for (numitemPattern(num, item) <- numitemPattern.findAllIn("99 bottles, 98 bottles")) 
 process num and item
+```
