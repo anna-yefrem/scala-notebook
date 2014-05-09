@@ -89,9 +89,7 @@ def product(s: String): Long = if (s.length == 0) 1 else s(0).toInt * product(s.
 product("Hello") //> res0: Long = 9415087488
 ```
 
-### 10.
-
-10. Write a function that computes xn, where n is an integer. Use the following recursive definition:
+### 10. Write a function that computes xn, where n is an integer. Use the following recursive definition:
 
 * x^n = y^2 if n is even and positive, where y = x^n / 2.
 * x^n = x·x^n – 1 if n is odd and positive.
