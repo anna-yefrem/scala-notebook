@@ -5,7 +5,7 @@ Exercise for Chapter 1
 
 [Exercise 9](#ex9)
 
-2. In the Scala REPL, compute the square root of 3, and then square that value. By how much does the result differ from 3?
+\2. In the Scala REPL, compute the square root of 3, and then square that value. By how much does the result differ from 3?
 
 _Ans_: 
 
