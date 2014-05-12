@@ -99,7 +99,7 @@ val a = ArrayBuffer(1, -2, -3, 4, -5)
 val negSeq = for (i <- 0 until a.length if a(i) < 0) yield i
 for (i <- negSeq.reverse.dropRight(1))
   a.remove(i)
-a     
+a //> res0: scala.collection.mutable.ArrayBuffer[Int] = ArrayBuffer(1, -2, 4)
 ```
 
 ### 9. Make a collection of all time zones returned by `java.util.TimeZone.getAvailableIDs` that are in America. Strip off the `"America/"` prefix and sort the result.
@@ -125,4 +125,5 @@ _Ans_:
 import java.awt.datatransfer._
 val flavors = SystemFlavorMap.getDefaultFlavorMap().asInstanceOf[SystemFlavorMap]
 flavors.getNativesForFlavor(DataFlavor.imageFlavor).toArray.toBuffer
+  // res0: scala.collection.mutable.Buffer[Object] = ArrayBuffer(PNG, JFIF, DIB, ENHMETAFILE, METAFILEPICT)
 ```
