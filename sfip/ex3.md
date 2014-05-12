@@ -108,7 +108,7 @@ _Ans_:
 
 ```scala
 val ids = java.util.TimeZone.getAvailableIDs
-ids.filter(x => x.take(7).equals("America")).map(x => x.drop(8))
+ids.filter(x => x.take(7).equals("America")).map(x => x.drop(8)).sorted
 ```
 
 ### 10. Import `java.awt.datatransfer._` and make an object of type SystemFlavorMap with the call
