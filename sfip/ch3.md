@@ -71,7 +71,7 @@ for (i <- 0 until a.length)
 val a = Array(2, 3, 5, 7, 11)
 val result = for (elem <- a) yield 2 * elem
   // result is Array(4, 6, 10, 14, 22)
-for (elem <- a if a % 2 == 0) yield 2 * elem
+for (elem <- a if elem % 2 == 0) yield 2 * elem
 ```
 
 * Remove all but the first negavie number
@@ -87,8 +87,10 @@ for (j <- (1 until indexes.length).reverse) a.remove(indexes(j))
 ArrayBuffer("Mary", "had", "a", "little", "lamb").max
   // return "little"
 val b = ArrayBuffer(1, 7, 2, 9)
-val bSorted = b.sorted(_ < _)
+val bSorted = b.sorted
   // b is unchanged; bSorted is ArrayBuffer(1, 2, 7, 9)
+val bReverseSorted = b.sortWith(_ > _)
+  // b is unchanged; bReverseSorted is ArrayBuffer(9, 7, 2, 1)
 a.mkString(" and ")
   // "1 and 2 and 7 and 9"
 a.mkString("<", ",", ">")
