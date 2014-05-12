@@ -12,3 +12,12 @@ Scala for the Impatient
 7. [Packages and Imports](ch7.md)
 8. [Inheritance](ch8.md)
 9. [Files and Regular Expressions](ch9.md)
+10. [Traits](ch10.md)
+
+### My Solutions for Exercises
+
+1. [The Basics](ex1.md)
+2. [Control Structures and Functions](ex2.md)
+3. [Working with Arrays](ex3.md)
+4. [Maps and Tuple](ex4.md)
+5. [Classes](ex5.md)
