@@ -85,7 +85,19 @@ class Student (n: String, i: Int) {
   @BeanProperty var name = n
   @BeanProperty var id = i
 }
+```
 
+or
+
+```scala
+class Student ( @BeanProperty var name: String,
+                @BeanProperty var id: Int) {
+}
+```
+
+* call getters and setters
+
+```scala
 val a = new Student("Kevin", 1)
 println(a.getName) //> Kevin
 println(a.getId) //> 1
