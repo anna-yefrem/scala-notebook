@@ -133,14 +133,14 @@ for (i <- a) {
   if (elements.length == 2) b(elements(0)) = elements(1)
 }
 val maxLength = b.map(x => x._1.length).max
-for ((k, v) <- b.take(7)) println(k + " " * (maxLength - k.length) + " |" + v)
-  //> java.runtime.name             |Java(TM) SE Runtime Environment
-  //| sun.boot.library.path         |C:\Program Files\Java\jre7\bin
-  //| java.vm.version               |23.6-b04
-  //| java.vm.vendor                |Oracle Corporation
-  //| java.vendor.url               |http://java.oracle.com/
-  //| path.separator                |;
-  //| java.vm.name                  |Java HotSpot(TM) Client VM
+for ((k, v) <- b.take(7)) println(k + " " * (maxLength - k.length) + " | " + v)
+  //> java.runtime.name             | Java(TM) SE Runtime Environment
+  //| sun.boot.library.path         | C:\Program Files\Java\jre7\bin
+  //| java.vm.version               | 23.6-b04
+  //| java.vm.vendor                | Oracle Corporation
+  //| java.vendor.url               | http://java.oracle.com/
+  //| path.separator                | ;
+  //| java.vm.name                  | Java HotSpot(TM) Client VM
 ```
 
 ### 8. Write a function `minmax(values: Array[Int])` that returns a pair containing the smallest and largest values in the array.
