@@ -22,7 +22,7 @@ At the end, print out all words and their counts.
 
 _Ans_:
 
-```
+```scala
 val in = new java.util.Scanner(new java.io.File("test.txt"))
   // Hello World Hello My World
 val wordCount = scala.collection.mutable.Map[String, Int]
@@ -76,7 +76,7 @@ sortedMap.foreach(println)
 
 ### 5. Repeat the preceding exercise with a `java.util.TreeMap` that you adapt to the Scala API.
 
-```
+```scala
 val in = new java.util.Scanner(new java.io.File("test.txt"))
   // Hello World Hello My World
 val treeMap = new java.util.TreeMap[String, Int]
@@ -111,7 +111,7 @@ for (i <- map) println(i)
 
 ### 7. Print a table of all Java properties, like this:
 
-```
+```scala
 java.runtime.name             | Java(TM) SE Runtime Environment
 sun.boot.library.path         | /home/apps/jdk1.6.0_21/jre/lib/i386
 java.vm.version               | 17.0-b16
