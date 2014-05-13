@@ -3,8 +3,8 @@ Scala Notebook
 
 ### Contents
 
-[Functional Programming Principles in Scala](fppis/Readme.md)
-[Scala for the Impatient](sfip/Readme.md)
+* [Functional Programming Principles in Scala](fppis/README.md)
+* [Scala for the Impatient](sfip/README.md)
 
 ### Others Resources
 
