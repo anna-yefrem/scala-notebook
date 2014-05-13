@@ -23,3 +23,8 @@ Book by Cay Horstmann
 3. [Working with Arrays](ex3.md)
 4. [Maps and Tuple](ex4.md)
 5. [Classes](ex5.md)
+6. [Objects](ex6.md)
+7. Packages and Imports
+8. [Inheritance](ex8.md)
+9. Files and Regular Expressions
+10. Traits
