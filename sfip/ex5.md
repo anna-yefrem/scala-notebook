@@ -178,10 +178,6 @@ Rewrite it to use explicit fields and a default primary constructor. Which form 
 _Ans_: not sure if is correct
 
 ```scala
-class Employee(val name: String, var salary: Double) {
-  def this() { this("John Q. Public", 0.0) }
-}
-
 class NewEmployee {
   private var privateName = "John Q. Public"
   def name = privateName
