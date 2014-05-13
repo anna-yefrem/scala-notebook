@@ -1,6 +1,8 @@
 Scala for the Impatient
 =======================
 
+Book by Cay Horstmann
+
 ### Contents
 
 1. The Basics
