@@ -1,7 +1,12 @@
 Scala Notebook
 ==============
 
-### Resources
+### Contents
+
+[Functional Programming Principles in Scala](fppis/Readme.md)
+[Scala for the Impatient](sfip/Readme.md)
+
+### Others Resources
 
 * [Scala Standard Library API](http://stackoverflow.com/tags/scala/info) 
 * [Scala School!](http://www.scala-lang.org/api/): A Scala tutorial by Twitter
