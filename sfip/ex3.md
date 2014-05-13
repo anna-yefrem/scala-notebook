@@ -1,4 +1,4 @@
-Exercises of Chapter 3
+Exercises for Chapter 3
 =======================
 
 ### 1. Write a code snippet that sets `a` to an array of `n` random integers between `0` (inclusive) and `n` (exclusive).
