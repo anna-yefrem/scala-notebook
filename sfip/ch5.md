@@ -1,4 +1,4 @@
-Chapter 4 Classes
+Chapter 5 Classes
 =================
 
 ## 5.1 Simple Classes and Parameterless Methods
