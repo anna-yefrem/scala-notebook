@@ -160,7 +160,7 @@ test("union contains all elements") {
 
 ### Conlusion
 
-The use of a high-order function is not as straightfoward as variables at first glance, expecially when there is anonymous functions. Let's look at the example:
+The use of a higher-order function is not as straightfoward as variables at first glance, expecially when there is anonymous functions. Let's look at the example:
 
 ```scala
 def singletonSet(elem: Int): (Int) => Boolean = (x: Int) => x == elem
