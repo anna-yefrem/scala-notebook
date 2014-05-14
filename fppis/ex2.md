@@ -23,7 +23,7 @@ Using this representation, we define a function that tests for the presence of a
 def contains(s: Set, elem: Int): Boolean = s(elem)
 ```
 
-### 1 Basic Functions on Sets
+### 2.1 Basic Functions on Sets
 
 * define a function which creates a singleton set from one integer value: the set represents the set of the one given element.
 
