@@ -1,4 +1,4 @@
-Week 2: Functional Sets
+Week 2: Functional Sets: Instructions
 =====================================
 
 In this assignment, you will work with a functional representation of _sets_ based on the mathematical notion of characteristic functions. The goal is to gain practice with _higher-order functions_.
@@ -23,7 +23,7 @@ Using this representation, we define a function that tests for the presence of a
 def contains(s: Set, elem: Int): Boolean = s(elem)
 ```
 
-### 2.1 Basic Functions on Sets
+### 1 Basic Functions on Sets
 
 * define a function which creates a singleton set from one integer value: the set represents the set of the one given element.
 
@@ -99,7 +99,7 @@ The function should check the complementary of whether all values of a set does 
 __Code__
 
 ```scala
-def exists(s: Set, p: Int => Boolean): Boolean = !forall(s, (x: Int) => !p(x))
+def exists(s: Set, p: Int => Boolean) = !forall(s, (x: Int) => !p(x))
 ```
 
 * write a function `map` which transforms a given set into another one by applying to each of its elements the given function. 
@@ -107,6 +107,10 @@ def exists(s: Set, p: Int => Boolean): Boolean = !forall(s, (x: Int) => !p(x))
 __Solution__
 
 The function returns a new `Set s'`, a function `(y: Int) => ???` which returns `true` if there exists a value `x` in `Set s` such that `y' = f(x)`. Thus we use `exists` function with parameter `s` and an anonymous function `(x: Int) => f(x) == y` where `y` is the parameter of the returning anonymous function.
+
+_Note_
+
+It is not possible to find all `x` from provided `y` by function `y = f(x)`, for the function may not be invertible. The possible way to implement `map` is to prove that there is a corresponding `x` in set `s`.
 
 __Code__
 
@@ -153,3 +157,16 @@ test("union contains all elements") {
   }
 }
 ```
+
+### Conlusion
+
+The use of a high-order function is not as straightfoward as variables at first glance, expecially when there is anonymous functions. Let's look at the example:
+
+```scala
+def singletonSet(elem: Int): (Int) => Boolean = (x: Int) => x == elem
+```
+
+The function `singletonSet` returns a function of type `(Int) => Boolean`, rather than a value of type `Boolean`. The returned function which is an anonymous function `(x: Int) => x == elem`, actually returns a `Boolean`.
+
+Thus when we use the `singletonSet` with a integer parameter like `singletonSet(10)`, it returns a function `(x: Int) => x == 10`. With substitution of `elem` by 10, we have `(singletonSet(10))(x)` evaluated by `x == 10`.
+
