@@ -3,14 +3,14 @@ Week 2
 
 ### 2.1 Higher-Order Functions
 
-* common pattern for sum_(n=a)^b{f(n)}:
+* common pattern for \[sum_(n=a)^b{f(n)}\]:
 
 ```scala
 def sum(f: Int => Int, a: Int, b: Int):
   if (a > b) 0
   else f(a) + sum(f, a + 1, b)
 
-def sumInts(a: Int, b: Int)	 		= sum(id, a, b)
+def sumInts(a: Int, b: Int)	 	= sum(id, a, b)
 def sumCubes(a: Int, b: Int)		= sum(cube, a, b))
 def sumFactorials(a: int, b: Int) 	= sum(fact, a, b))
 
@@ -36,16 +36,16 @@ def sumCubes(a: Int, b: Int) = sum(x => x * x * x, a, b)
 _EXERCISE_
 
 ```scala
-  def sum(f: Int => Int, a: Int, b: Int): Int = {
-    def loop(a: Int, acc: Int): Int = {
-      if (a > b) acc
-      else loop(a + 1, acc + f(a))
-    }
-    loop(a, 0)
+def sum(f: Int => Int, a: Int, b: Int): Int = {
+  def loop(a: Int, acc: Int): Int = {
+    if (a > b) acc
+    else loop(a + 1, acc + f(a))
   }
+  loop(a, 0)
+}
   
-  sum(x => x, 1, 2) 
-    //> res0: Int = 3
+sum(x => x, 1, 2) 
+  //> res0: Int = 3
 ```
 
 ### 2.2 Currying
@@ -87,7 +87,7 @@ def sum(f: Int => Int)(a: Int, b: Int) = {
 (Int => Int) => (Int, Int) => Int
 ```
 
-Note that `Int => Int => Int` is equivalent to `Int => (Int => Int)`
+* Note that `Int => Int => Int` is equivalent to `Int => (Int => Int)`
 
 _EXERCISE_
 
@@ -313,9 +313,9 @@ _EXERCISE_
 
 _Ans_:
 
-`a + b ^? c ?^ d less a ==> b | c`
-`a + b ^? (c ?^ d) less a ==> b | c`
-`(a + b) ^? (c ?^ d) less a ==> b | c`
-`(a + b) ^? (c ?^ d) less (a ==> b) | c`
-`((a + b) ^? (c ?^ d)) less (a ==> b) | c`
-`((a + b) ^? (c ?^ d)) less ((a ==> b) | c)`
+1. `a + b ^? c ?^ d less a ==> b | c`
+2. `a + b ^? (c ?^ d) less a ==> b | c`
+3. `(a + b) ^? (c ?^ d) less a ==> b | c`
+4. `(a + b) ^? (c ?^ d) less (a ==> b) | c`
+5. `((a + b) ^? (c ?^ d)) less (a ==> b) | c`
+6. `((a + b) ^? (c ?^ d)) less ((a ==> b) | c)`
