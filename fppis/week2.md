@@ -267,9 +267,10 @@ class Rational(x: Int, y: Int) {
 
 ### 2.7 Evaluation and Operators
 
+* the substitution process of `new C(v1, ..., vm) { def y(x1, ..., xm) }`:
+
 _DIFFICULT_
 
-* the substitution process of `new C(v1, ..., vm) { def y(x1, ..., xm) }`:
 
 ```scala
 new Rational(1, 2).numer //> res0: Int = 1
@@ -305,7 +306,7 @@ def - (that: Rational) = this + -that // use unary operator -
   * `=` `!`
   * `:`
   * `+` `-`
-  * `*` `/` %`
+  * `*` `/` `%`
 
 _EXERCISE_
 
