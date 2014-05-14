@@ -1,4 +1,4 @@
-Week 2: Functional Sets: Instructions
+Week 2: Functional Sets
 =====================================
 
 In this assignment, you will work with a functional representation of _sets_ based on the mathematical notion of characteristic functions. The goal is to gain practice with _higher-order functions_.
