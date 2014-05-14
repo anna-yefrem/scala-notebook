@@ -99,7 +99,7 @@ The function should check the complementary of whether all values of a set does 
 __Code__
 
 ```scala
-def exists(s: Set, p: Int => Boolean) = !forall(s, (x: Int) => !p(x))
+def exists(s: Set, p: Int => Boolean): Boolean = !forall(s, (x: Int) => !p(x))
 ```
 
 * write a function `map` which transforms a given set into another one by applying to each of its elements the given function. 
