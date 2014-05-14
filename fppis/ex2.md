@@ -1,5 +1,5 @@
-Week 2: Functional Sets: Instructions
-=====================================
+Week 2: Functional Sets
+=======================
 
 In this assignment, you will work with a functional representation of _sets_ based on the mathematical notion of characteristic functions. The goal is to gain practice with _higher-order functions_.
 
@@ -23,7 +23,7 @@ Using this representation, we define a function that tests for the presence of a
 def contains(s: Set, elem: Int): Boolean = s(elem)
 ```
 
-### 1 Basic Functions on Sets
+### 2.1 Basic Functions on Sets
 
 * define a function which creates a singleton set from one integer value: the set represents the set of the one given element.
 
@@ -99,7 +99,7 @@ The function should check the complementary of whether all values of a set does 
 __Code__
 
 ```scala
-def exists(s: Set, p: Int => Boolean) = !forall(s, (x: Int) => !p(x))
+def exists(s: Set, p: Int => Boolean): Boolean = !forall(s, (x: Int) => !p(x))
 ```
 
 * write a function `map` which transforms a given set into another one by applying to each of its elements the given function. 
@@ -160,7 +160,7 @@ test("union contains all elements") {
 
 ### Conlusion
 
-The use of a higher-order function is not as straightfoward as variables at first glance, expecially when there is anonymous functions. Let's look at the example:
+The use of a high-order function is not as straightfoward as variables at first glance, expecially when there is anonymous functions. Let's look at the example:
 
 ```scala
 def singletonSet(elem: Int): (Int) => Boolean = (x: Int) => x == elem
