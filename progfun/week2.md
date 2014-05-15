@@ -3,7 +3,7 @@ Week 2
 
 ### 2.1 Higher-Order Functions
 
-* common pattern for \[sum_(n=a)^b{f(n)}\]:
+* common pattern for $\sum_{n=a}^b{f(n)}$:
 
 ```scala
 def sum(f: Int => Int, a: Int, b: Int):
