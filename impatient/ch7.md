@@ -6,7 +6,7 @@ Chapter 7 Packages and Imports
 * define a package object in the _parent_ package
 
 ```scala
-package objectpeople {
+package object people {
   val defaultName = "John Q. Public"
 }
 
