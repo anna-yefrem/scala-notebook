@@ -48,8 +48,9 @@ Guides to Exercises
     2. Use `Main` as the object name (any other name would also work)
     3. Confirm by clicking `"Finish"`
     4. Edit the `Main` object, for examples
-    ``` object Main extends App {
-        println(Lists.max(List(1,3,2)))
+    ```
+    object Main extends App {
+    println(Lists.max(List(1,3,2)))
         }
     ```
     5. Execute by right-click on the file `Main.scala` and select `"Run As" - "Scala Application"`
