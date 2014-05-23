@@ -24,10 +24,10 @@ Link: https://class.coursera.org/progfun-004
 
 ### Assignments
 
-* [Week 1](ex1.md)
+* [Week 1: Functions & Evaluations: Recursion](ex1.md)
   1. Pascal’s Triangle
   2. Parentheses Balancing
   3. Counting Change
-* [Week 2](ex2.md)
+* [Week 2: Functional Sets](ex2.md)
   1. Basic Functions on Sets
   2. Queries and Transformations on Sets
