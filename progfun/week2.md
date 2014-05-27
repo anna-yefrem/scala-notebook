@@ -138,9 +138,9 @@ def sqrt(x: Double) = fixedPoint(averageDamp(y => x / y))(1.0)
 ### 2.4 Scala Syntax Summary
 
 * EBNF:
-  * | denotes an alternative
-  * \[...\] an option (0 or 1)
-  * {...} a repetition (0 or more)
+  * `|` denotes an alternative
+  * `\[...\]` an option (0 or 1)
+  * `{...}` a repetition (0 or more)
 
 * A _type_ can be:
   * numeric type: `Int`, `Double`
