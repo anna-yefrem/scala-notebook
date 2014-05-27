@@ -43,3 +43,12 @@ Link: https://class.coursera.org/progfun-004
 * [Week 2: Functional Sets](ex2.md)
   1. Basic Functions on Sets
   2. Queries and Transformations on Sets
+* [Week 3: Object-Oriented Sets](ex3.md)
+  1. Filtering
+  2. Taking Unions
+  3. Sorting Tweets by Their Influence
+  4. Tying everything together
+* [Week 4: Huffman Coding](ex4.md)
+  1. Implementation
+  2. Decoding
+  3. Encoding
