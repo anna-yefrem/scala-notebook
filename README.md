@@ -3,8 +3,8 @@ Scala Notebook
 
 ### Contents
 
-* [Functional Programming Principles in Scala](progfun/README.md)
-* [Scala for the Impatient](impatient/README.md)
+* [Functional Programming Principles in Scala](progfun/)
+* [Scala for the Impatient](impatient/)
 
 ### Others Resources
 
