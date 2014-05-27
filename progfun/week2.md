@@ -6,7 +6,7 @@ Week 2
 * common pattern for ![$\sum_{n=a}^b{f(n)}$](http://latex.codecogs.com/gif.latex?%24%5Csum_%7Bn%3Da%7D%5Eb%7Bf%28n%29%7D%24):
 
 ```scala
-def sum(f: Int => Int, a: Int, b: Int):
+def sum(f: Int => Int, a: Int, b: Int) =
   if (a > b) 0
   else f(a) + sum(f, a + 1, b)
 
