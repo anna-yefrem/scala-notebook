@@ -25,7 +25,7 @@ Link: https://class.coursera.org/progfun-004
   1. Class Hierarchies
   2. How Classes Are Organized
   3. Polymorphism
-- Week 4
+- [Week 4](week4.md)
   1. Functions as Objects
   2. Objects Everywhere
   3. Subtyping and Generics
