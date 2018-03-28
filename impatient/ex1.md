@@ -1,10 +1,6 @@
 Exercises for Chapter 1
 ======================
 
-_UNSOLVED_
-
-* [Exercise 8](#ex8)
-
 ### <a name="ex2">2. In the Scala REPL, compute the square root of 3, and then square that value. By how much does the result differ from 3?</a>
 
 _Ans_: 
@@ -39,12 +35,15 @@ _Ans_:
 
 ```scala
 var exp: BigInt = 2
-for (i <- 0 to 1024)
+for (i <- 1 to 1023)
   exp *= 2
 exp
 ```
 
 _ALTERNATIVE_
+```scala
+BigInt(2).pow(1024)
+```
 
 ### <a name="ex7">7. What do you need to import so that you can get a random prime as `probablePrime(100, Random)`, without any qualifiers before `probablePrime` and `Random`?</a>
 
@@ -57,7 +56,9 @@ import util.Random
 
 ### <a name="ex8">8. One way to create random file or directory names is to produce a random `BigInt` and convert it to base 36, yielding a string such as `"qsnvbevtomcj38o06kul"`. Poke around Scaladoc to find a way of doing this in Scala.</a>
 
-_UNSOLVED_
+```scala
+BigInt.apply(100, util.Random).toString(36)
+```
 
 ### <a name="ex9">9. How do you get the first character of a string in Scala? The last character?</a>
 
@@ -88,3 +89,12 @@ s.takeRight(2) // "lo"
 s.dropRight(2) // "Hel"
 ```
 
+```comment from stackoverflow
+The main benefit is that it allows you to treat a String as a sequential collection of characters, much like any other Seq or List instance.
+
+In fact, these methods (and other important transformational functions like map, flatMap and filter) are not implemented in String itself (which is, in fact, simply the Java String class, not a native-Scala class), but in the StringOps class (which extends StringLike -> ... -> SeqLike), and an implicit conversion ensures that a String is converted into a StringOps whenever you need access to these methods.
+
+This means you can pass a String to a list-manipulation function and the function will receive a StringOps instance, work on it like any other SeqLike entity without needing to know it is actually a String, and hand back the results of the manipulation, which StringOps is designed to present back to you as a String.
+
+If you know an entity is a String in a given piece of code, feel free to use the String-specific methods, but the availability of this implicit conversion means that you can also take advantage of a String's "character sequence"-like nature to treat it like any other list in situations where that may be convenient.
+```
